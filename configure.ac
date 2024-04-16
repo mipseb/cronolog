@@ -22,7 +22,6 @@ dnl
 dnl $Id: configure.ac 1671 2003-07-05 07:19:51Z andrew $
 dnl
 
-
 AC_REVISION($Id: configure.ac 1671 2003-07-05 07:19:51Z andrew $)
 
 AC_INIT([cronolog],[1.6.3],[A.Ford@ford-mason.co.uk])
@@ -33,6 +32,7 @@ AC_CONFIG_HEADERS(config.h)
 AC_CONFIG_AUX_DIR(config)
 AM_INIT_AUTOMAKE
 
+AC_DEFINE([_XOPEN_SOURCE], [500], [Enable X/Open extensions])
 
 dnl Checks for programs.
 
